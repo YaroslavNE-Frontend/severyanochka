@@ -1,9 +1,12 @@
-.main-header {}
+.main-header {
+    background-color: #ffffff;
+}
 
 .main__header-nav {
-    padding: 16px 0;
+    padding: 16px 0 4px 0;
     display: flex;
     align-items: center;
+    border-bottom: 4px solid #fbf8ec;
 }
 
 .main__header-logo {
@@ -268,6 +271,7 @@
     background-image: url('../../images/main-header-banner-decor.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: gold;
 }
 
 .main-header-banner-img {}

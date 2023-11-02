@@ -33,6 +33,7 @@ $ff-regular: 400;
 // BLOCKS
 
 @import "./blocks/header";
+@import "./blocks/section/_stock";
 @import "./blocks/footer";
 
 *,
@@ -46,7 +47,7 @@ body {
   font-weight: $ff-regular;
   font-size: 10px;
   margin: 0;
-  background-color: #ffffff;
+  background-color: #fbf8ec;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -88,6 +89,14 @@ main {
   border: none;
   display: inline-block;
   cursor: pointer;
+}
+
+.title {
+  color: #414141;
+  font-family: Rubik, sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 54px;
 }
 
 .none {
