@@ -129,7 +129,6 @@
     }
 }
 
-
 .catalog-link-user {
     display: flex;
     align-items: center;
@@ -140,9 +139,6 @@
     font-weight: $ff-regular;
     line-height: 1.5;
 }
-
-.profile-list .catalog-link-user,
-.profile-list-select .catalog-link-user {}
 
 .icon--box,
 .icon--cart,
@@ -233,8 +229,6 @@
     transform: rotate(180deg);
 }
 
-.user-avatar-img {}
-
 .user-avatar-wrap {
     display: flex;
     flex-direction: column;
@@ -264,4 +258,25 @@
 .user-avatar-arrow svg,
 .user-avatar-arrow-select svg {
     fill: #414141
+}
+
+.main-header-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    background-image: url('../../images/main-header-banner-decor.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.main-header-banner-img {}
+
+.main-header-banner-title {
+    color: #414141;
+    text-align: center;
+    font-family: Rubik, sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 72px;
 }
