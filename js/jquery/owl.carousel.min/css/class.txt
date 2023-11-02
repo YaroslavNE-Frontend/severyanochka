@@ -1,0 +1,25 @@
+
+/* Class */
+ owl-item - элемент слайдера -- active - активный элементы которые видны на экране
+
+
+ data-merge="2" слайд сольется со следующим и займет его пространство
+
+ dotsData="номер" показывает указанный номер в dots
+
+ azyLoad
+Type: Boolean
+Default: false
+
+Lazy load images. 
+data-src and data-src-retina <img>
+подгрузка изображений во время действий для оптимизации
+
+
+
+
+
+
+
+
+
