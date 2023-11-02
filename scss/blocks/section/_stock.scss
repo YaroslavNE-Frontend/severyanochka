@@ -1,42 +1,23 @@
 .stock {
-    padding: 80px 0 120px 0;
+    padding: 40px 0 60px 0;
 }
 
-.stock__header {
+.new {
+    padding: 60px 0 60px 0;
+}
+
+.product__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.stock__header-title {
+.product__header-title {
     margin: 0;
 }
 
-.stock__header-link {
-    position: relative;
-    padding-right: 32px;
-    text-decoration: none;
-    color: #606060;
-    text-align: center;
-    font-family: Rubik, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
-
-    &::after {
-        position: absolute;
-        content: '';
-        width: 24px;
-        height: 24px;
-        right: -20px;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        background-image: url('/images/arrow.svg');
-    }
-}
-
-.stock-list {
+.product-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
@@ -45,32 +26,28 @@
     margin: 0;
 }
 
-.stock-item {}
-
-.stock__card {
+.product__card {
     overflow: hidden;
     border-radius: 4px;
     box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.10);
     background-color: #ffffff;
 }
 
-.stock__card-content {
+.product__card-content {
     padding: 8px;
 }
 
-.stock-wrap-img {
+.product-wrap-img {
     position: relative;
 }
 
-.stock-heart-icon {
+.product-heart-icon {
     position: absolute;
     top: 8px;
     right: 8px;
 }
 
-.stock-img {}
-
-.stock-discount {
+.product-discount {
     position: absolute;
     padding: 4px 8px;
     margin: 0;
@@ -86,18 +63,18 @@
     line-height: 24px;
 }
 
-.stock__wrap {
+.product__wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.stock__wrap-card {
+.product__wrap-card {
     display: flex;
     flex-direction: column;
 }
 
-.stock-card-price {
+.product-card-price {
     color: #414141;
     font-family: Rubik, sans-serif;
     font-size: 18px;
@@ -105,7 +82,7 @@
     line-height: 27px;
 }
 
-.stock-subtitle {
+.product-subtitle {
     color: #bfbfbf;
     font-family: Rubik, sans-serif;
     font-size: 12px;
@@ -113,12 +90,12 @@
     line-height: 18px;
 }
 
-.stock__wrap-price {
+.product__wrap-price {
     display: flex;
     flex-direction: column;
 }
 
-.stock-price {
+.product-price {
     color: #606060;
     font-family: Rubik, sans-serif;
     font-size: 16px;
@@ -126,7 +103,7 @@
     line-height: 24px;
 }
 
-.card-text {
+.product-text {
     margin: 8px 0 8px 0;
     color: #414141;
     font-family: Rubik, sans-serif;
@@ -135,11 +112,7 @@
     line-height: 24px;
 }
 
-.card-star {}
-
-.card-star--two {}
-
-.card-btn {
+.product-btn {
     padding: 8px;
     width: 100%;
     min-height: 40px;
