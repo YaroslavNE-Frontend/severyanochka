@@ -208,7 +208,7 @@
 
 .profile-list-select {
   position: absolute;
-  top: 50px;
+  top: 55px;
   padding: 0;
   list-style: none;
   visibility: hidden;
@@ -238,6 +238,8 @@
 }
 
 .user-avatar-name {
+  margin-left: 10px;
+  margin-right: 40px;
   display: inline-block;
   color: #232323;
   font-size: 16px;
