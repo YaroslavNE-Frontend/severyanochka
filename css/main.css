@@ -333,15 +333,25 @@
   margin: 0;
 }
 
+.stock__card {
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.stock__card-content {
+  padding: 8px;
+}
+
 .stock-wrap-img {
   position: relative;
-  margin-bottom: 8px;
 }
 
 .stock-heart-icon {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
 }
 
 .stock-discount {
@@ -349,7 +359,7 @@
   padding: 4px 8px;
   margin: 0;
   bottom: 0;
-  left: 0;
+  left: 10px;
   color: #ffffff;
   background-color: #F63;
   border-radius: 4px;
