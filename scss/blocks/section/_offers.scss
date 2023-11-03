@@ -1,0 +1,69 @@
+.offers {
+    padding-bottom: 60px;
+}
+
+.offers-title {
+    margin: 0 0 40px 0;
+}
+
+.offers__content__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.offers__content__block {
+    position: relative;
+    display: flex;
+    padding-left: 40px;
+    width: 584px;
+    min-height: 200px;
+}
+
+.offers__content {
+    max-width: 258px;
+}
+
+.offers__content-title {
+    color: #414141;
+    font-family: Rubik, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.offers__content-text {
+    color: #414141;
+    font-family: Rubik, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.offers__content__card-img {
+    position: absolute;
+    top: 3px;
+    right: -4px;
+}
+
+.bg--card {
+    overflow: hidden;
+    border-radius: 4px;
+    background: #fcd5ba;
+    box-shadow: 0px 8px 16px 0px rgba(202, 147, 96, 0.50);
+}
+
+.offers__content__cart-img {
+    position: absolute;
+    top: 5px;
+    right: 55px;
+}
+
+.bg--cart {
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #e5ffde;
+    background-image: url("../../../images/offers-decor.svg");
+    background-repeat: no-repeat;
+}

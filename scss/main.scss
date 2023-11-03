@@ -29,13 +29,6 @@
 $ff-bold: 700;
 $ff-regular: 400;
 
-
-// BLOCKS
-
-@import "./blocks/header";
-@import "./blocks/section/product";
-@import "./blocks/footer";
-
 *,
 *::before,
 *::after {
@@ -122,6 +115,13 @@ main {
     background-image: url('/images/arrow.svg');
   }
 }
+
+// BLOCKS
+
+@import "./blocks/header";
+@import "./blocks/section/product";
+@import "./blocks/section/offers";
+@import "./blocks/footer";
 
 .none {
   display: none;

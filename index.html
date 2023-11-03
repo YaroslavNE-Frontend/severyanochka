@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div class="main-container">
-    <header class="main-header">
+  <header class="main-header">
+    <div class="main-container">
       <h1 class="visually-hidden">Интернет магазин северяночка</h1>
       <nav class="main__header-nav">
         <a class="main__header-logo">
@@ -135,8 +135,10 @@
         <img class="main-header-banner-img" src="./images/main-header-banner.jpg" alt="Пакет с разной едой">
         <h2 class="main-header-banner-title">Доставка бесплатно от 1000 ₽</h2>
       </div>
-    </header>
-    <main class="main">
+    </div>
+  </header>
+  <main class="main">
+    <div class="main-container">
       <section class="stock">
         <header class="stock__header product__header">
           <h2 class="stock__header-title title">Акции</h2>
@@ -526,10 +528,30 @@
           </li>
         </ul>
       </section>
-    </main>
-    <footer class="footer"></footer>
-    <script src="./js/main.js"></script>
-  </div>
+      <section class="offers">
+        <h2 class="offers-title title">Специальные предложения</h2>
+        <div class="offers__content__wrap">
+          <div class="offers__content__block bg--card">
+            <div class="offers__content">
+              <h3 class="offers__content-title">Оформите карту «Северяночка»</h3>
+              <p class="offers__content-text">И получайте бонусы при покупкe<br>в магазинах и на сайте</p>
+            </div>
+            <img class="offers__content__card-img" src="./images/card.png" alt="">
+          </div>
+          <div class="offers__content__block bg--cart">
+            <div class="offers__content">
+              <h3 class="offers__content-title">Покупайте акционные товары</h3>
+              <p class="offers__content-text">И получайте вдвое больше бонусов</p>
+            </div>
+            <img class="offers__content__cart-img" src="./images/cart.png" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="footer"></footer>
+  <script src="./js/main.js"></script>
+
 </body>
 
 </html>
