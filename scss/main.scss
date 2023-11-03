@@ -54,6 +54,14 @@ main {
   flex-shrink: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  vertical-align: top;
+}
+
+
 .main-container {
   width: 1230px;
   padding: 0 15px;
@@ -116,11 +124,20 @@ main {
   }
 }
 
+.text {
+  color: #414141;
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
 // BLOCKS
 
 @import "./blocks/header";
 @import "./blocks/section/product";
 @import "./blocks/section/offers";
+@import "./blocks/section/articles";
 @import "./blocks/footer";
 
 .none {
