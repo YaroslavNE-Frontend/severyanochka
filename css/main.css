@@ -170,7 +170,7 @@ main {
   transition: all 0.2s ease-in-out;
 }
 
-.catalog-list.active {
+.catalog-menu:hover > .catalog-btn + .catalog-list {
   transform: translateX(0);
 }
 

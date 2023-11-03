@@ -64,11 +64,9 @@
     transition: all 0.2s ease-in-out;
 }
 
-.catalog-list.active {
+.catalog-menu:hover>.catalog-btn+.catalog-list {
     transform: translateX(0);
 }
-
-.catalog-item {}
 
 .catalog-link {
     display: block;
@@ -84,7 +82,6 @@
     &:hover {
         color: #F63;
     }
-
 }
 
 .catalog-user-form {

@@ -1,7 +1,7 @@
-const CatalogBtn = document.querySelector('.catalog-btn');
-const CatalogList = document.querySelector('.catalog-list');
+// const CatalogBtn = document.querySelector('.catalog-btn');
+// const CatalogList = document.querySelector('.catalog-list');
 
-CatalogBtn.onclick  = () => {
-    CatalogList.classList.toggle('active');
-}
+// CatalogBtn.onclick  = () => {
+//     CatalogList.classList.toggle('active');
+// }
 
