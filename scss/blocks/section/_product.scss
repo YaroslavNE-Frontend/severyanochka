@@ -113,9 +113,11 @@
 }
 
 .product-btn {
+    display: inline-block;
     padding: 8px;
     width: 100%;
     min-height: 40px;
+    margin-top: auto;
     color: #70c05b;
     text-align: center;
     font-family: Rubik, sans-serif;
