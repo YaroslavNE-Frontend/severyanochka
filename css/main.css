@@ -612,7 +612,7 @@ img {
 }
 
 .articles {
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
 .articles__header {
@@ -684,6 +684,10 @@ img {
 .articles__block-link:hover {
   background-color: #70c05b;
   color: #ffffff;
+}
+
+.main-footer {
+  padding: 40px 0 58px 0;
 }
 
 .none {
