@@ -280,11 +280,11 @@ img {
   margin-bottom: 8px;
 }
 
-.catalog-link-user.icon--heart svg:hover {
+.catalog-link-user:hover.icon--heart svg {
   fill: #F63;
 }
 
-.catalog-link-user.icon--box svg:hover {
+.catalog-link-user:hover.icon--box svg {
   fill: #f3a200;
 }
 
@@ -292,7 +292,7 @@ img {
   position: relative;
 }
 
-.catalog-link-user.icon--cart svg:hover {
+.catalog-link-user:hover.icon--cart svg {
   fill: #154163;
 }
 

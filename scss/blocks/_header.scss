@@ -164,27 +164,20 @@
     margin-bottom: 8px;
 }
 
-.catalog-link-user.icon--heart svg {
-    &:hover {
-        fill: #F63;
-    }
+.catalog-link-user:hover.icon--heart svg {
+    fill: #F63;
 }
 
-.catalog-link-user.icon--box svg {
-    &:hover {
-        fill: #f3a200;
-    }
+.catalog-link-user:hover.icon--box svg {
+    fill: #f3a200;
 }
 
 .catalog-link-user.icon--cart {
     position: relative;
 }
 
-.catalog-link-user.icon--cart svg {
-
-    &:hover {
-        fill: #154163;
-    }
+.catalog-link-user:hover.icon--cart svg {
+    fill: #154163;
 }
 
 .icon--cart-decor::after {
