@@ -1,12 +1,13 @@
 .main-header {
     background-color: #ffffff;
+    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
 }
 
 .main__header-nav {
     padding: 16px 0 0 0;
     display: flex;
     align-items: center;
-    box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
+
 }
 
 .main__header-logo {
@@ -155,7 +156,7 @@
     flex-direction: column;
 }
 
-.catalog-link-user.icon--cart svg,
+.catalog-link-user.icon--cart,
 .catalog-link-user.icon--heart svg,
 .catalog-link-user.icon--box svg {
     transition: all 0.3s ease-in-out;
