@@ -4,7 +4,7 @@
 }
 
 .main__header-nav {
-    padding: 16px 0 4px 0;
+    padding: 16px 0 0 0;
     display: flex;
     align-items: center;
     border-bottom: 4px solid #fbf8ec;
@@ -53,7 +53,7 @@
     position: absolute;
     padding: 40px 160px;
     content: '';
-    top: 72px;
+    top: calc(26px + 40px);
     left: 0;
     right: 0;
     columns: 272px 4;
@@ -62,6 +62,7 @@
     background-color: #ffffff;
     transform: translateX(-200%);
     transition: all 0.2s ease-in-out;
+    z-index: 3;
 }
 
 .catalog-menu:hover>.catalog-btn+.catalog-list {
