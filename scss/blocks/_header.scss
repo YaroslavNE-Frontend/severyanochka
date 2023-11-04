@@ -35,6 +35,7 @@
         position: absolute;
         background-image: url('../../images/menu.svg');
         background-position: center right;
+        background-repeat: no-repeat;
         width: 24px;
         height: 24px;
         top: 50%;
@@ -156,7 +157,7 @@
     flex-direction: column;
 }
 
-.catalog-link-user.icon--cart,
+.catalog-link-user.icon--cart svg,
 .catalog-link-user.icon--heart svg,
 .catalog-link-user.icon--box svg {
     transition: all 0.3s ease-in-out;
@@ -263,6 +264,13 @@
     fill: #414141
 }
 
+.main-header-banner-wrap {
+    padding-left: 20px;
+    padding-right: 117px;
+    display: flex;
+    align-items: center;
+}
+
 .main-header-banner {
     display: flex;
     align-items: center;
@@ -274,11 +282,10 @@
     background-repeat: no-repeat;
 }
 
-.main-header-banner-img {}
-
 .main-header-banner-title {
+    max-width: 751px;
+    margin-left: 18px;
     color: #414141;
-    text-align: center;
     font-family: Rubik, sans-serif;
     font-size: 48px;
     font-weight: 700;
