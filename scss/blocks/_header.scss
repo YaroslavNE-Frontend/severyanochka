@@ -214,9 +214,11 @@
 }
 
 .profile-list-select {
+    min-width: 176px;
     position: absolute;
     top: 55px;
     padding: 0;
+    margin: 0;
     list-style: none;
     visibility: hidden;
     opacity: 0;
