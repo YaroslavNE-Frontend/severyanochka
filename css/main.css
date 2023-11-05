@@ -958,6 +958,10 @@ img {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+  transition: color 0.3s ease-in-out;
+}
+.main-footer-link:hover {
+  color: #f63;
 }
 
 .main-footer-social-list {
@@ -968,9 +972,12 @@ img {
   list-style: none;
 }
 
+.main-footer-social-item:not(:first-child) {
+  margin-left: 16px;
+}
+
 .main-footer-social-link {
   display: inline-block;
-  margin-left: 16px;
 }
 
 .main-footer-logo-list {
