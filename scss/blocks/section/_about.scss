@@ -1,0 +1,38 @@
+.about {}
+
+.about__wrap {}
+
+.about__content {}
+
+.about__content-title {}
+
+.about__content-text {}
+
+.about__advantages-list {}
+
+.about__advantages-item {}
+
+.about__advantages-text {}
+
+.about__advantages__accent-text {}
+
+.gratitude__wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.gratitude-img {}
+
+.gratitude-text {
+    max-width: 805px;
+    padding: 30px 40px;
+    color: #70c05b;
+    background-color: #E5ffde;
+    border-radius: 16px;
+    font-family: Rubik, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+}

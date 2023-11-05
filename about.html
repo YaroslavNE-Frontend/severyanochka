@@ -2,10 +2,10 @@
 <html lang="ru">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/css/main.css" />
-    <title>Каталог товаров</title>
+    <title>Главная Северяночка</title>
 </head>
 
 <body>
@@ -13,11 +13,11 @@
         <header class="main-header">
             <h1 class="visually-hidden">Интернет магазин северяночка</h1>
             <nav class="main__header-nav">
-                <a href="./index.html" class="main__header-logo">
+                <a class="main__header-logo" href="./index.html">
                     <img src="./images/logo.svg" width="152" height="32px" alt="header-logo">
                 </a>
                 <span class="catalog-menu">
-                    <a class="btn catalog-btn" href="#">Каталог</a>
+                    <a class="btn catalog-btn" href="./catalog.html">Каталог</a>
                     <ul class="nav-list catalog-list">
                         <li class="catalog-item">
                             <a href="#" class="catalog-link">Молоко, сыр, яйцо</a>
@@ -140,111 +140,36 @@
             </nav>
         </header>
         <main class="main">
-            <section class="caralog">
-                <header class="caralog__header">
-                    <ul class="breadcrumbs">
-                        <li class="breadcrumbs-item">
-                            <a href="#" class="breadcrumbs-link">Главная</a>
-                        </li>
-                        <li class="breadcrumbs-item">
-                            <a href="#" class="breadcrumbs-link breadcrumbs-link-current">Каталог</a>
-                        </li>
-                    </ul>
-                    <h1 class="caralog-title">Каталог</h1>
-                </header>
-                <ul class="catalog__categories-list">
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-1.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Молоко, сыр, яйцо</h2>
-                        </a>
+            <section class="about">
+                <div class="about__wrap">
+                    <div class="about__content">
+                        <h2 class="about__content-title">О компании</h2>
+                        <p class="about__content-text">Мы непрерывно развиваемся и  работаем над совершенствованием
+                            сервиса, заботимся о наших клиентах, стремимся к лучшему будущему.</p>
+                    </div>
+                    <img src="./images/about-img.svg" alt="спрайт люди беседуют за столом">
+                </div>
+                <ul class="about__advantages-list">
+                    <li class="about__advantages-item">
+                        <p class="about__advantages-text">Мы занимаемся розничной торговлей
+                            <strong class="about__advantages__accent-text">Более 20 лет.</strong>
+                        </p>
+                    <li class="about__advantages-item">
+                        <p class="about__advantages-text">Мы занимаемся розничной торговлей
+                            <strong class="about__advantages__accent-text">Более 20 лет.</strong>
+                        </p>
                     </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-2.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Хлеб</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-3.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Фрукты</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-4.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Замороженные</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-5.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Напитки</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-6.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Кондитерские изделия</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-7.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Чай, кофе</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-8.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Бакалея</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-9.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Здоровое питание</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-10.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Зоотовары</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-11.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Детское питание</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-12.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Мясо, птица, колбаса</h2>
-                        </a>
-                    </li>
-                    <li class="catalog__categories-item">
-                        <a href="#" class="catalog__categories-link">
-                            <img class="catalog__categories-img" src="./images/catalog/catalog-13.jpg"
-                                alt="Творог, сыр и яйца на столе">
-                            <h2 class="catalog__categories-title">Непродовольственные товары</h2>
-                        </a>
+                    <li class="about__advantages-item">
+                        <p class="about__advantages-text">Мы занимаемся розничной торговлей
+                            <strong class="about__advantages__accent-text">Более 20 лет.</strong>
+                        </p>
                     </li>
                 </ul>
+                <div class="gratitude__wrap">
+                    <img class="gratitude-img" width="127" height="103" src="./images/gratitude-face.svg"
+                        alt="Улыбайющийся смайлик">
+                    <p class="gratitude-text">Спасибо за то, что вы с нами. Северяночка, везет всегда!</p>
+                </div>
             </section>
         </main>
         <footer class="main-footer">
@@ -254,7 +179,7 @@
                 </a>
                 <ul class="main-footer-list">
                     <li class="main-footer-item">
-                        <a class="main-footer-link" href="./about.html">О компании</a>
+                        <a class="main-footer-link" href="#">О компании</a>
                     </li>
                     <li class="main-footer-item">
                         <a class="main-footer-link" href="#">Контакты</a>
@@ -329,6 +254,7 @@
                 <img src="./images/footer-logo-2.svg" width="100" height="10" alt="zasovskiy">
             </div>
         </footer>
+        <script src="./js/main.js"></script>
     </div>
 </body>
 
