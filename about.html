@@ -11,7 +11,6 @@
 <body>
     <div class="main-container">
         <header class="main-header">
-            <h1 class="visually-hidden">Интернет магазин северяночка</h1>
             <nav class="main__header-nav">
                 <a class="main__header-logo" href="./index.html">
                     <img src="./images/logo.svg" width="152" height="32px" alt="header-logo">
@@ -141,28 +140,38 @@
         </header>
         <main class="main">
             <section class="about">
-                <div class="about__wrap">
-                    <div class="about__content">
-                        <h2 class="about__content-title">О компании</h2>
-                        <p class="about__content-text">Мы непрерывно развиваемся и  работаем над совершенствованием
-                            сервиса, заботимся о наших клиентах, стремимся к лучшему будущему.</p>
-                    </div>
-                    <img src="./images/about-img.svg" alt="спрайт люди беседуют за столом">
+                <h1 class="visually-hidden">Интернет магазин северяночка</h1>
+                <header class="about__header">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs-item">
+                            <a href="#" class="breadcrumbs-link">Главная</a>
+                        </li>
+                        <li class="breadcrumbs-item">
+                            <a href="#" class="breadcrumbs-link breadcrumbs-link-current">Каталог</a>
+                        </li>
+                    </ul>
+                    <h2 class="about-title">О компании</h1>
+                </header>
+                <div class="about__content">
+                    <p class="about__content-text">Мы непрерывно развиваемся и<br>работаем над совершенствованием
+                        сервиса, заботимся о наших клиентах,<br>стремимся к лучшему будущему.</p>
+                    <img class="about-img" width="669" height="372" src="./images/about-img.svg"
+                        alt="спрайт люди беседуют за столом">
                 </div>
                 <ul class="about__advantages-list">
                     <li class="about__advantages-item">
-                        <p class="about__advantages-text">Мы занимаемся розничной торговлей
-                            <strong class="about__advantages__accent-text">Более 20 лет.</strong>
-                        </p>
+                        <h3 class="about__advantages-title">Мы занимаемся<br>розничной торговлей</h3>
+                        <p class="about__advantages-text">Более 20 лет.</p>
+                    </li>
                     <li class="about__advantages-item">
-                        <p class="about__advantages-text">Мы занимаемся розничной торговлей
-                            <strong class="about__advantages__accent-text">Более 20 лет.</strong>
+                        <h3 class="about__advantages-title">Основная миссия компании</h3>
+                        <p class="about__advantages-text">Максимальное качество<br>товаров и услуг по<br>доступной цене.
                         </p>
                     </li>
                     <li class="about__advantages-item">
-                        <p class="about__advantages-text">Мы занимаемся розничной торговлей
-                            <strong class="about__advantages__accent-text">Более 20 лет.</strong>
-                        </p>
+                        <h3 class="about__advantages-title">Отличительная черта нашей сети</h3>
+                        <p class="about__advantages-text">Здоровая и полезная продукция местного производства внаших
+                            магазинах.</p>
                     </li>
                 </ul>
                 <div class="gratitude__wrap">

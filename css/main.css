@@ -54,6 +54,7 @@ img {
 
 .main-container {
   max-width: 1440px;
+  width: calc(100% + 232px);
   margin: 0 auto;
 }
 
@@ -695,11 +696,7 @@ img {
 }
 
 .caralog {
-  padding: 0 116px 40px 116px;
-}
-
-.caralog__header {
-  padding-top: 27px;
+  padding: 27px 116px 40px 116px;
 }
 
 .breadcrumbs {
@@ -802,6 +799,97 @@ img {
   font-weight: 700;
   line-height: 27px;
   z-index: 5;
+}
+
+.about {
+  padding: 27px 116px 0 116px;
+}
+
+.about-title {
+  margin-left: 30px;
+  color: #414141;
+  font-family: Rubik, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
+}
+
+.about__content {
+  margin-left: 30px;
+  position: relative;
+  min-height: 370px;
+}
+
+.about__content-text {
+  max-width: 550px;
+  color: #F63;
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.about-img {
+  position: absolute;
+  right: 0;
+  top: -92px;
+  z-index: -1;
+}
+
+.about__advantages-list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0 0 0 40px;
+  margin: 0;
+}
+
+.about__advantages-item {
+  position: relative;
+  max-width: 405px;
+}
+.about__advantages-item::before {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  content: "";
+  background-image: url("../../../images/advantages-tick-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+.about__advantages-item::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: -34px;
+  background-image: url("../../../images/advantages-tick.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 18px;
+  height: 14px;
+  text-align: center;
+  z-index: 2;
+}
+
+.about__advantages-title {
+  margin-top: 0;
+  color: #414141;
+  font-family: Rubik, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.about__advantages-text {
+  color: #414141;
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
 }
 
 .gratitude__wrap {
