@@ -136,6 +136,9 @@ img {
 .main__header-logo {
   margin-right: 40px;
 }
+.main__header-logo img {
+  min-width: 152px;
+}
 
 .catalog-btn {
   position: relative;
