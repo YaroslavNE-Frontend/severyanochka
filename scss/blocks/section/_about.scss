@@ -15,9 +15,10 @@
 }
 
 .about__content {
+    margin-bottom: 120px;
     margin-left: 30px;
     position: relative;
-    min-height: 370px;
+    min-height: 280px;
 }
 
 .about__content-text {
@@ -40,7 +41,6 @@
     display: flex;
     justify-content: space-between;
     list-style: none;
-    padding: 0 0 0 40px;
     margin: 0;
 
 
@@ -89,6 +89,7 @@
 }
 
 .about__advantages-text {
+    margin-bottom: 0;
     color: #414141;
     font-family: Rubik, sans-serif;
     font-size: 24px;
@@ -100,14 +101,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 80px;
+    margin-top: 120px;
+    margin-bottom: 80px;
 }
 
 .gratitude-img {}
 
 .gratitude-text {
+    position: relative;
     max-width: 805px;
     padding: 30px 40px;
+    margin: 0;
     color: #70c05b;
     background-color: #E5ffde;
     border-radius: 16px;
@@ -115,4 +120,17 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 36px;
+
+    &::before {
+        position: absolute;
+        content: "";
+        left: -20px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 41px;
+        height: 40px;
+        background-image: url("../../../images/gratitude-decor.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
