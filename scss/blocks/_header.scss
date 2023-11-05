@@ -1,4 +1,5 @@
 .main-header {
+    padding: 0 116px;
     background-color: #ffffff;
     box-shadow: 2px 4px 8px 0px rgba(0, 0, 0, 0.10);
 }
@@ -265,16 +266,15 @@
 }
 
 .main-header-banner-wrap {
-    padding-left: 20px;
-    padding-right: 117px;
     display: flex;
     align-items: center;
 }
 
 .main-header-banner {
+    padding: 0 128px 0 172px;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     margin-top: 4px;
     min-height: 200px;
     background-image: url('../../images/main-header-banner-decor.jpg');
@@ -284,7 +284,6 @@
 
 .main-header-banner-title {
     max-width: 751px;
-    margin-left: 18px;
     color: #414141;
     font-family: Rubik, sans-serif;
     font-size: 48px;
