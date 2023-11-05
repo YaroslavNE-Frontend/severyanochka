@@ -53,7 +53,7 @@ img {
 }
 
 .main-container {
-  max-width: 1450px;
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -695,7 +695,7 @@ img {
 }
 
 .caralog {
-  padding-bottom: 40px;
+  padding: 0 116px 40px 116px;
 }
 
 .caralog__header {
