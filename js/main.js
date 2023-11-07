@@ -27,3 +27,19 @@ CloseBtn.addEventListener('click', (e) => {
 });
 
 
+// ПОИСК
+
+document.querySelector('#product').oninput = function() {
+    let val = this.value.trim();
+    let productItem = document.querySelectorAll('.product-list li');
+    if (val != '') {
+        productItem.forEach(function(elem) {
+            if (elem.innerText.search(val) == -1) {
+                elem.classList.add('none')
+            }
+            else elem.classList.remove('none');
+        });
+    }
+}
+
+
