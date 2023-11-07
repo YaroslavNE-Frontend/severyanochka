@@ -12,7 +12,6 @@
 }
 
 .modal {
-    padding-top: 72px;
     position: relative;
     margin: auto;
     background-color: #ffffff;
@@ -22,7 +21,11 @@
 
 .modal__size {
     width: 420px;
-    min-height: 431px;
+}
+
+.modal__content {
+    padding-top: 72px;
+    padding-bottom: 40px;
 }
 
 .icon-close-btn {
@@ -35,8 +38,6 @@
     background: #f3f2f1;
     cursor: pointer;
 }
-
-.modal__content {}
 
 .modal__content-title {
     max-width: 260px;

@@ -10,7 +10,36 @@
 
 <body>
   <div class="main-container">
-    <!-- <header class="main-header">
+    <div class="modal__wrapper none">
+      <div class="modal modal__size">
+        <button class="icon-close-btn" id="close" type="button">
+          <span class="visually-hidden">Закрыть модальное окно</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645Z"
+              fill="#414141" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z"
+              fill="#414141" />
+          </svg>
+        </button>
+        <section class="modal__content">
+          <h2 class="modal__content-title">Вход</h2>
+          <form class="modal__form" metod="post" action="">
+            <label class="modal__label-phone">
+              Телефон
+              <input class="modal__input-phone" type="text" name="phone" placeholder="+7 914 529 14 17">
+            </label>
+            <button class="modal-entrance" type="submit">Вход</button>
+            <div class="btn__modal-wrapper">
+              <button class="modal-registration" type="submit">Регистрация</button>
+              <button class="modal-password" type="submit">Забыли пароль?</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </div>
+    <header class="main-header">
       <nav class="main__header-nav">
         <a class="main__header-logo">
           <img src="./images/logo.svg" width="152" height="32" alt="header-logo">
@@ -107,40 +136,25 @@
         </ul>
         <ul class="profile-list profile__menu-list">
           <li class="profile-item profile__menu-item">
-            <a class="profile-link profile__menu-link" href="#">
-              <img class="profile-avatar profile__menu-avatar" src="./images/avatar.jpg" alt="">
-              <p class="profile-name profile__menu__avatar-name">Алексей</p>
-              <span class="profile-arrow profile__menu-arrow">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M5.64645 8.64645C5.84171 8.45118 6.15829 8.45118 6.35355 8.64645L12 14.2929L17.6464 8.64645C17.8417 8.45118 18.1583 8.45118 18.3536 8.64645C18.5488 8.84171 18.5488 9.15829 18.3536 9.35355L12.3536 15.3536C12.1583 15.5488 11.8417 15.5488 11.6464 15.3536L5.64645 9.35355C5.45118 9.15829 5.45118 8.84171 5.64645 8.64645Z" />
-                </svg>
-              </span>
-            </a>
-            <ul class="profile-list profile__submenu-list">
-              <li class="profile-item profile__submenu-item">
-                <a class="profile-link profile__submenu-link" href="#">
-                  <p class="profile-name">Профиль</p>
-                  <span class="profile-arrow profile__submenu-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M5.64645 8.64645C5.84171 8.45118 6.15829 8.45118 6.35355 8.64645L12 14.2929L17.6464 8.64645C17.8417 8.45118 18.1583 8.45118 18.3536 8.64645C18.5488 8.84171 18.5488 9.15829 18.3536 9.35355L12.3536 15.3536C12.1583 15.5488 11.8417 15.5488 11.6464 15.3536L5.64645 9.35355C5.45118 9.15829 5.45118 8.84171 5.64645 8.64645Z" />
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li class="profile-item profile__submenu-item">
-                <a class="profile-link profile__submenu-link" href="#">
-                  <p class="profile-name">Выйти</p>
-                  <span class="profile-arrow profile__submenu-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                      <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M5.64645 8.64645C5.84171 8.45118 6.15829 8.45118 6.35355 8.64645L12 14.2929L17.6464 8.64645C17.8417 8.45118 18.1583 8.45118 18.3536 8.64645C18.5488 8.84171 18.5488 9.15829 18.3536 9.35355L12.3536 15.3536C12.1583 15.5488 11.8417 15.5488 11.6464 15.3536L5.64645 9.35355C5.45118 9.15829 5.45118 8.84171 5.64645 8.64645Z" />
-                    </svg>
-                  </span>
-                </a>
-              </li>
-            </ul>
+            <div class="profile-wrap">
+              <a class="profile-link profile__menu-link sign-in" href="#">
+                <span class="profile-avatar">
+                  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M23.7952 16.7593H4.11265C3.70027 16.7593 3.36352 17.1155 3.40134 17.5359C3.83353 22.53 8.39311 26.4609 13.9539 26.4609C19.5148 26.4609 24.0743 22.5318 24.5065 17.5359C24.5425 17.1155 24.2076 16.7593 23.7952 16.7593Z"
+                      fill="#FF6633" />
+                    <path
+                      d="M10.4621 9.53876C10.2434 9.53876 10.026 9.44042 9.88416 9.25171C9.16838 8.30818 7.80839 7.72079 6.33573 7.72079C4.86307 7.72079 3.50309 8.30685 2.7873 9.25171C2.54473 9.57198 2.08875 9.63311 1.77062 9.38992C1.45117 9.14673 1.3902 8.68958 1.63277 8.37064C2.63222 7.05235 4.38986 6.26562 6.33573 6.26562C8.2816 6.26562 10.0392 7.05235 11.04 8.37064C11.2826 8.69091 11.2203 9.14673 10.9022 9.38992C10.7696 9.49092 10.6159 9.53876 10.4621 9.53876Z"
+                      fill="#414141" />
+                    <path
+                      d="M25.7863 9.53876C25.5676 9.53876 25.3502 9.44042 25.2084 9.25171C24.4926 8.30818 23.1326 7.72079 21.66 7.72079C20.1873 7.72079 18.8273 8.30685 18.1115 9.25171C17.869 9.57198 17.413 9.63311 17.0948 9.38992C16.7754 9.14673 16.7144 8.68958 16.957 8.37064C17.9564 7.05235 19.7141 6.26562 21.66 6.26562C23.6058 6.26562 25.3635 7.05235 26.3642 8.37064C26.6068 8.69091 26.5445 9.14673 26.2264 9.38992C26.0938 9.49092 25.9401 9.53876 25.7863 9.53876Z"
+                      fill="#414141" />
+                  </svg>
+                </span>
+                <p class="profile-name profile__menu__avatar-name">Войти</p>
+              </a>
+            </div>
+          </li>
         </ul>
       </nav>
     </header>
@@ -679,36 +693,7 @@
         <span class="main-footer-address-span">Дизайн</span>
         <img src="./images/footer-logo-2.svg" width="100" height="10" alt="zasovskiy">
       </div>
-    </footer> -->
-    <div class="modal__wrapper">
-      <div class="modal modal__size">
-        <button class="icon-close-btn" id="close" type="button">
-          <span class="visually-hidden">Закрыть модальное окно</span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M18.3536 5.64645C18.5488 5.84171 18.5488 6.15829 18.3536 6.35355L6.35355 18.3536C6.15829 18.5488 5.84171 18.5488 5.64645 18.3536C5.45118 18.1583 5.45118 17.8417 5.64645 17.6464L17.6464 5.64645C17.8417 5.45118 18.1583 5.45118 18.3536 5.64645Z"
-              fill="#414141" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M5.64645 5.64645C5.84171 5.45118 6.15829 5.45118 6.35355 5.64645L18.3536 17.6464C18.5488 17.8417 18.5488 18.1583 18.3536 18.3536C18.1583 18.5488 17.8417 18.5488 17.6464 18.3536L5.64645 6.35355C5.45118 6.15829 5.45118 5.84171 5.64645 5.64645Z"
-              fill="#414141" />
-          </svg>
-        </button>
-        <div class="modal__content">
-          <h2 class="modal__content-title">Вход</h2>
-          <form class="modal__form" metod="post" action="">
-            <label class="modal__label-phone">
-              Телефон
-              <input class="modal__input-phone" type="text" name="phone" placeholder="+7 914 529 14 17">
-            </label>
-            <button class="modal-entrance" type="submit">Вход</button>
-            <div class="btn__modal-wrapper">
-              <button class="modal-registration" type="submit">Регистрация</button>
-              <button class="modal-password" type="submit">Забыли пароль?</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
+    </footer>
     <script src="./js/main.js"></script>
   </div>
 </body>
