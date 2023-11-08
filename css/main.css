@@ -133,6 +133,14 @@ img {
   height: 100%;
   background: rgba(252, 213, 186, 0.8);
   z-index: 99;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s, visibility 0.5s ease-in-out;
+}
+
+.modal__wrapper.open {
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal {
@@ -141,6 +149,12 @@ img {
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 8px 16px 32px 0px rgba(255, 102, 51, 0.2);
+  transform: scale(0);
+  transition: transform 0.8s ease-in-out;
+}
+
+.modal__wrapper.open .modal {
+  transform: scale(1);
 }
 
 .modal__size {

@@ -1,44 +1,39 @@
-// const CatalogBtn = document.querySelector('.catalog-btn');
-// const CatalogList = document.querySelector('.catalog-list');
 
-// CatalogBtn.onclick  = () => {
-//     CatalogList.classList.toggle('active');
-// }
-
-
-// const NewBtn = document.querySelector('new-btn');
-// const Modal = document.querySelector('modal__wrapper');
-
-// NewBtn.onclick  = () => {
-//     Modal.classList.toggle('none');
-// }
 
 
 // МОДАЛЬНОЕ ОКНО
+//Открыть/Закрыть модальное окно
 
-
-const OpenBtn = document.querySelector('.sign-in');
+const OpenBtn = document.getElementById('sign-in');
 const ModalWrapper = document.querySelector('.modal__wrapper');
 const CloseBtn = document.querySelector('.icon-close-btn');
-
-
-
-// OpenBtn.forEach(function (item) {
-//     item.addEventListener('click', function () {
-//         const modalId = this.OpenBtn;
-//         const modal = document.querySelector('#' + modalId);
-//         modal.classList.remove('none')
-//     })
-// })
+const ModalAll = document.querySelector('.modal__wrapper .modal');
 
 OpenBtn.addEventListener('click', (e) => {
-    ModalWrapper.classList.toggle('none');
-});
+    ModalWrapper.classList.toggle('open');
+})
 
 CloseBtn.addEventListener('click', (e) => {
-    ModalWrapper.classList.toggle('none');
+    ModalWrapper.classList.toggle('open');
+})
+
+// Закрыть модальное окно Esc
+
+window.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        ModalWrapper.classList.remove('open')
+    }
 });
 
+//Закрыть модальное окно при клике в не окна
+ModalAll.addEventListener('click', event => {
+    event._isClickWithInModal = true;
+});
+
+ModalWrapper.addEventListener('click', event => {
+    if (event._isClickWithInModal) return;
+    event.currentTarget.classList.remove('open');
+});
 
 // ПОИСК
 
