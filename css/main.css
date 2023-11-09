@@ -840,9 +840,11 @@ img {
 
 .ourshops-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   -moz-column-gap: 32px;
        column-gap: 32px;
+  row-gap: 25px;
   margin: 0;
   padding: 0;
   list-style: none;
