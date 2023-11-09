@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Rubik";
   src: local("Rubik"), url("rubik-400.ttf") format("ttf");
@@ -55,7 +56,7 @@ img {
 
 .main-container {
   max-width: 1440px;
-  width: calc(100% + 232px);
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -90,6 +91,14 @@ img {
   font-size: 36px;
   font-weight: 700;
   line-height: 54px;
+}
+
+.main-title {
+  color: #414141;
+  font-family: Rubik, sans-serif;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 96px;
 }
 
 .link {
@@ -937,14 +946,6 @@ img {
   color: #8f8f8f;
 }
 
-.caralog-title {
-  margin: 48px 0 81px 0;
-  color: #414141;
-  font-family: Rubik, sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-}
-
 .catalog__categories-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1003,15 +1004,6 @@ img {
 
 .about {
   padding: 27px 116px 0 116px;
-}
-
-.about-title {
-  margin-left: 30px;
-  color: #414141;
-  font-family: Rubik, sans-serif;
-  font-size: 64px;
-  font-weight: 700;
-  line-height: 96px;
 }
 
 .about__content {
@@ -1126,6 +1118,66 @@ img {
   background-image: url("../../../images/gratitude-decor.svg");
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.vacancies {
+  padding: 27px 116px 40px 116px;
+}
+
+.vacancies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.vacancies-item {
+  max-width: 376px;
+  padding: 32px;
+  background-color: #ffffff;
+}
+
+.vacancies-title {
+  margin-top: 0;
+  color: #414141;
+  font-family: Rubik, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+}
+
+.vacancies-сracking,
+.vacancies-сracking-text {
+  color: #414141;
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.vacancies-phone {
+  display: inline-block;
+  position: relative;
+  padding-left: 40px;
+  color: #414141;
+  font-family: Rubik, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration-line: underline;
+}
+.vacancies-phone::after {
+  content: "";
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-image: url("../../../images/phone.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .main-footer {
