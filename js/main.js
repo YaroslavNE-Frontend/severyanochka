@@ -69,52 +69,6 @@ function insertMark(string, pos, len) {
 
 // Подстановка нужной ссылки по клику
 
-// const TrafficLight = document.getElementById("traffic__light")
-// const FiveShop = document.getElementById("five__shop")
-// const Ekonomych = document.getElementById("ekonomych")
-// const Eldorado = document.getElementById("eldorado")
-// const IframeMap = document.getElementById("map-ourshops")
-// const OurshopsMapReset = document.getElementById("ourshops__map-reset")
-// const OurshopsLink = document.querySelectorAll(".ourshops-link")
-
-// function removeActiveClass() {
-//     OurshopsLink.forEach((link) => link.classList.remove('active'));
-// }
-
-// TrafficLight.addEventListener('click', event => {
-//     IframeMap.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2453.720077599468!2d113.48732007642808!3d52.04841097194133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5dca355d3ad115af%3A0x1da1a27c5b719cbe!2z0KHQstC10YLQvtGE0L7RgA!5e0!3m2!1sru!2sru!4v1699523920901!5m2!1sru!2sru";
-//     removeActiveClass();
-//     TrafficLight.classList.add("active");
-
-// });
-
-// FiveShop.addEventListener('click', event => {
-//     IframeMap.src = "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2453.614977523071!2d113.4443671!3d52.050325!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x416555046e6bd16d%3A0x5a47670a0a01950!2z0J_Rj9GC0ZHRgNC-0YfQutCw!5e0!3m2!1sru!2sru!4v1699523756165!5m2!1sru!2sru";
-//     removeActiveClass();
-//     FiveShop.classList.add("active");
-// });
-
-// Ekonomych.addEventListener('click', event => {
-//     IframeMap.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d78507.80800448892!2d113.27359982548762!3d52.05480441756078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5dca4a783704a7e3%3A0x5e157e53367e5cf5!2z0K3QutC-0L3QvtC80YvRhw!5e0!3m2!1sru!2sru!4v1699524016701!5m2!1sru!2sru";
-//     removeActiveClass();
-//     Ekonomych.classList.add("active");
-// });
-
-// Eldorado.addEventListener('click', event => {
-//     IframeMap.src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19634.116782347995!2d113.49074129833112!3d52.0384936540629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5dca351a5f637951%3A0x49cbbacab09afc14!2z0K3Qu9GM0LTQvtGA0LDQtNC-!5e0!3m2!1sru!2sru!4v1699524076179!5m2!1sru!2sru";
-//     removeActiveClass();
-//     Eldorado.classList.add("active");
-// });
-
-// OurshopsMapReset.addEventListener('click', event => {
-//     IframeMap.src = "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2453.6149790637746!2d113.44436707642816!3d52.05032497194186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1699519574548!5m2!1sru!2sru";
-//     removeActiveClass();
-//     OurshopsMapReset.classList.add("active");
-// })
-
-
-
-
 const shopData = {
     shop1: [{
         lat: 55.75222,
@@ -142,6 +96,36 @@ const shopData = {
     ],
 };
 
+const ShopButtons = document.querySelectorAll('.shop-button');
+const TrafficLight = document.getElementById("traffic-light");
+const FiveShop = document.getElementById("five-shop");
+const Ekonomych = document.getElementById("ekonomych");
+const Magnet = document.getElementById("magnet-shop");
+
+function removeActiveClass() {
+    ShopButtons.forEach((button) => button.classList.remove('active'));
+}
+
+Ekonomych.addEventListener('click', event => {
+    removeActiveClass();
+    Ekonomych.classList.add("active");
+});
+
+Magnet.addEventListener('click', event => {
+    removeActiveClass();
+    Magnet.classList.add("active");
+});
+
+FiveShop.addEventListener('click', event => {
+    removeActiveClass();
+    FiveShop.classList.add("active");
+});
+
+TrafficLight.addEventListener('click', event => {
+    removeActiveClass();
+    TrafficLight.classList.add("active");
+});
+
 const init = () => {
     const map = new ymaps.Map('map', {
         center: [55.753215, 37.622504],
@@ -165,7 +149,6 @@ const init = () => {
         activeShop = shop;
     }
 
-    const ShopButtons = document.querySelectorAll('.shop-button');
     ShopButtons.forEach((button) => {
         button.addEventListener('click', (e) => {
             const shop = e.currentTarget.dataset.shop;
@@ -178,33 +161,12 @@ const init = () => {
 
 ymaps.ready(init);
 
-// map.controls.remove('geolocationControl'); // удаляем геолокацию
-// map.controls.remove('searchControl'); // удаляем поиск
-// map.controls.remove('trafficControl'); // удаляем контроль трафика
-// map.controls.remove('typeSelector'); // удаляем тип
-// map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-// map.controls.remove('zoomControl'); // удаляем контрол зуммирования
-// map.controls.remove('rulerControl'); // удаляем контрол правил
-// // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
-
-// map.geoObjects.add(placemark);
-// map.geoObjects.add(geoeldorado);
 
 
-// let placemark = new ymaps.Placemark(center, {}, {
-//     iconLayout: 'default#image',
-//     iconImageHref: '../images/avatar.jpg',
-//     iconImageSize: [40, 40],
-//     iconImageOffset: [-19, -44]
-// });
 
-// let geoeldorado = new ymaps.Placemark(GeoEldorado, {}, {
-//     iconLayout: 'default#image',
-//     iconImageHref: '../images/eo-logo.png',
-//     iconImageSize: [40, 40],
-//     iconImageOffset: [-19, -44]
 
-// });
+
+
 
 
 
