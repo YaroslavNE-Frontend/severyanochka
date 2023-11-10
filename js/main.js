@@ -117,42 +117,38 @@ function insertMark(string, pos, len) {
 
 const shopData = {
     shop1: [{
-        lat: 55.7777,
-        lon: 37.777,
-        name: 'Светофор'
-    }],
+        lat: 55.75222,
+        lon: 37.61556,
+        name: 'Светофор',
+    }
+    ],
     shop2: [{
-        lat: 55.7777,
-        lon: 37.777,
-        name: 'Пятерочка'
-    }],
+        lat: 55.75583,
+        lon: 37.61778,
+        name: 'Магнит'
+    }
+    ],
     shop3: [{
-        lat: 55.7777,
-        lon: 37.777,
-        name: 'Экономыч'
-    }],
+        lat: 55.75444,
+        lon: 37.61833,
+        name: 'Пятерочка'
+    }
+    ],
     shop4: [{
-        lat: 55.7777,
-        lon: 37.777,
-        name: 'Эльдорадо'
-    }],
+        lat: 55.75230,
+        lon: 37.61560,
+        name: 'Экономыч'
+    }
+    ],
 };
 
-
-
-let center = [48.8866527839977, 2.34310679732974];
-let GeoEldorado = [52.048122, 113.503241];
-
-
-
 const init = () => {
-    let map = new ymaps.Map('map', {
-        center: center,
-        zoom: 17
+    const map = new ymaps.Map('map', {
+        center: [55.753215, 37.622504],
+        zoom: 14,
     });
 
     let activeShop = "shop1";
-
 
     const showShop = (shop) => {
         map.geoObjects.removeAll();
@@ -162,10 +158,20 @@ const init = () => {
                 hintContent: item.name,
                 balloonContent: item.name,
             });
+
             map.geoObjects.add(placemark);
         });
+
         activeShop = shop;
     }
+
+    const ShopButtons = document.querySelectorAll('.shop-button');
+    ShopButtons.forEach((button) => {
+        button.addEventListener('click', (e) => {
+            const shop = e.currentTarget.dataset.shop;
+            showShop(shop);
+        });
+    });
 
     showShop(activeShop);
 };
