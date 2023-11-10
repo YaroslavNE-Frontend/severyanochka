@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
   <link rel="stylesheet" href="./css/main.css" />
   <title>Главная Северяночка</title>
 </head>
@@ -593,11 +594,12 @@
             <a class="ourshops-link active" id="ourshops__map-reset">По умолчанию</a>
           </li>
         </ul>
-        <iframe class="ourshops-map" id="map-ourshops"
+        <div class="map" id="map" style="width: 100%; height: 354px"></div>
+        <!-- <iframe class="ourshops-map" id="map-ourshops"
           src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2453.6149790637746!2d113.44436707642816!3d52.05032497194186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1699519574548!5m2!1sru!2sru"
           width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        </iframe> -->
       </section>
       <section class="articles">
         <header class="articles__header">
@@ -719,6 +721,9 @@
         <img src="./images/footer-logo-2.svg" width="100" height="10" alt="zasovskiy">
       </div>
     </footer>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=61dd4420-8fb2-48eb-ac23-2658d95b75e2&lang=ru_RU"
+      type="text/javascript"></script>
+
     <script src="./js/main.js"></script>
   </div>
 </body>
