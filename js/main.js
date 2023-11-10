@@ -115,34 +115,95 @@ function insertMark(string, pos, len) {
 
 
 
-let center = [48.8866527839977, 2.34310679732974];
+const shopData = {
+    shop1: [{
+        lat: 55.7777,
+        lon: 37.777,
+        name: 'Светофор'
+    }],
+    shop2: [{
+        lat: 55.7777,
+        lon: 37.777,
+        name: 'Пятерочка'
+    }],
+    shop3: [{
+        lat: 55.7777,
+        lon: 37.777,
+        name: 'Экономыч'
+    }],
+    shop4: [{
+        lat: 55.7777,
+        lon: 37.777,
+        name: 'Эльдорадо'
+    }],
+};
 
-function init() {
+
+
+let center = [48.8866527839977, 2.34310679732974];
+let GeoEldorado = [52.048122, 113.503241];
+
+
+
+const init = () => {
     let map = new ymaps.Map('map', {
         center: center,
         zoom: 17
     });
 
-    let placemark = new ymaps.Placemark(center, {}, {
-        iconLayout: 'default#image',
-        iconImageHref: '../images/avatar.jpg',
-        iconImageSize: [40, 40],
-        iconImageOffset: [-19, -44]
-    });
+    let activeShop = "shop1";
 
-    map.controls.remove('geolocationControl'); // удаляем геолокацию
-    map.controls.remove('searchControl'); // удаляем поиск
-    map.controls.remove('trafficControl'); // удаляем контроль трафика
-    map.controls.remove('typeSelector'); // удаляем тип
-    map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
-    map.controls.remove('zoomControl'); // удаляем контрол зуммирования
-    map.controls.remove('rulerControl'); // удаляем контрол правил
-    // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
 
-    map.geoObjects.add(placemark);
-}
+    const showShop = (shop) => {
+        map.geoObjects.removeAll();
+
+        shopData[shop].forEach((item) => {
+            const placemark = new ymaps.Placemark([item.lat, item.lon], {
+                hintContent: item.name,
+                balloonContent: item.name,
+            });
+            map.geoObjects.add(placemark);
+        });
+        activeShop = shop;
+    }
+
+    showShop(activeShop);
+};
 
 ymaps.ready(init);
+
+// map.controls.remove('geolocationControl'); // удаляем геолокацию
+// map.controls.remove('searchControl'); // удаляем поиск
+// map.controls.remove('trafficControl'); // удаляем контроль трафика
+// map.controls.remove('typeSelector'); // удаляем тип
+// map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+// map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+// map.controls.remove('rulerControl'); // удаляем контрол правил
+// // map.behaviors.disable(['scrollZoom']); // отключаем скролл карты (опционально)
+
+// map.geoObjects.add(placemark);
+// map.geoObjects.add(geoeldorado);
+
+
+// let placemark = new ymaps.Placemark(center, {}, {
+//     iconLayout: 'default#image',
+//     iconImageHref: '../images/avatar.jpg',
+//     iconImageSize: [40, 40],
+//     iconImageOffset: [-19, -44]
+// });
+
+// let geoeldorado = new ymaps.Placemark(GeoEldorado, {}, {
+//     iconLayout: 'default#image',
+//     iconImageHref: '../images/eo-logo.png',
+//     iconImageSize: [40, 40],
+//     iconImageOffset: [-19, -44]
+
+// });
+
+
+
+
+
 
 
 
