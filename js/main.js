@@ -68,6 +68,18 @@ function insertMark(string, pos, len) {
 }
 
 // Подстановка нужной ссылки по клику
+let ShopButtons = document.querySelectorAll(".shop-button")
+let BtnsList = document.querySelector(".ourshops-list").querySelectorAll(".shop-button");
+
+BtnsList.forEach(element => {
+    element.addEventListener("click", function () {
+        BtnsList.forEach(btns => btns.classList.remove("active"))
+
+        this.classList.add("active");
+    })
+});
+
+
 
 const shopData = {
     shop1: [{
@@ -130,46 +142,4 @@ const init = () => {
 };
 
 ymaps.ready(init);
-
-(() => {
-
-    let activeBtn;
-
-    document.querySelectorAll('.shop-button').forEach(e => {
-        e.addEventListener('click', onButtonClick)
-    });
-
-    function onButtonClick(e) {
-        if (activeBtn) {
-            if (activeBtn != e.currentTarget) {
-                activeBtn.classList.remove('active');
-            }
-        }
-
-        activeBtn = e.currentTarget;
-        activeBtn.classList.add('active');
-    }
-
-})();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
