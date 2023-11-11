@@ -96,36 +96,6 @@ const shopData = {
     ],
 };
 
-const ShopButtons = document.querySelectorAll('.shop-button');
-const TrafficLight = document.getElementById("traffic-light");
-const FiveShop = document.getElementById("five-shop");
-const Ekonomych = document.getElementById("ekonomych");
-const Magnet = document.getElementById("magnet-shop");
-
-function removeActiveClass() {
-    ShopButtons.forEach((button) => button.classList.remove('active'));
-}
-
-Ekonomych.addEventListener('click', event => {
-    removeActiveClass();
-    Ekonomych.classList.add("active");
-});
-
-Magnet.addEventListener('click', event => {
-    removeActiveClass();
-    Magnet.classList.add("active");
-});
-
-FiveShop.addEventListener('click', event => {
-    removeActiveClass();
-    FiveShop.classList.add("active");
-});
-
-TrafficLight.addEventListener('click', event => {
-    removeActiveClass();
-    TrafficLight.classList.add("active");
-});
-
 const init = () => {
     const map = new ymaps.Map('map', {
         center: [55.753215, 37.622504],
@@ -160,6 +130,27 @@ const init = () => {
 };
 
 ymaps.ready(init);
+
+(() => {
+
+    let activeBtn;
+
+    document.querySelectorAll('.shop-button').forEach(e => {
+        e.addEventListener('click', onButtonClick)
+    });
+
+    function onButtonClick(e) {
+        if (activeBtn) {
+            if (activeBtn != e.currentTarget) {
+                activeBtn.classList.remove('active');
+            }
+        }
+
+        activeBtn = e.currentTarget;
+        activeBtn.classList.add('active');
+    }
+
+})();
 
 
 
