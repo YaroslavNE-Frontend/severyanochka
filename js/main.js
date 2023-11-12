@@ -79,30 +79,30 @@ BtnsList.forEach(element => {
     })
 });
 
-
-
 const shopData = {
     shop1: [{
         lat: 55.75222,
         lon: 37.61556,
-        name: 'Светофор',
+        name: 'Светофор'
     }
     ],
     shop2: [{
-        lat: 55.75583,
-        lon: 37.61778,
+        lat: 51.400682,
+        lon: 37.818970,
         name: 'Магнит'
+
     }
     ],
     shop3: [{
         lat: 55.75444,
         lon: 37.61833,
-        name: 'Пятерочка'
+        name: 'Пятерочка',
     }
     ],
     shop4: [{
         lat: 55.75230,
         lon: 37.61560,
+        locationUrl: 'https://yandex.ru/maps/-/CDeB70Nx',
         name: 'Экономыч'
     }
     ],
@@ -126,6 +126,8 @@ const init = () => {
             });
 
             map.geoObjects.add(placemark);
+
+
         });
 
         activeShop = shop;
