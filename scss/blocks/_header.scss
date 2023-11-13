@@ -93,12 +93,27 @@
 
 .catalog-user-form {
     position: relative;
+    width: 375px;
     margin-right: 40px;
+
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background-image: url("../../images/search.svg");
+        background-repeat: no-repeat;
+        top: 8px;
+        right: 8px;
+        z-index: 999;
+    }
+
 }
 
 .catalog-user-input {
+    width: 100%;
     padding: 8px 40px 8px 8px;
-    width: 355px;
     height: 40px;
     font-family: inherit;
     color: #333;
@@ -120,7 +135,7 @@
     position: absolute;
     content: '';
     top: 50%;
-    right: 0;
+    right: 18px;
     transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     width: 24px;
@@ -133,16 +148,13 @@
 }
 
 .catalog-list-user {
+    margin-right: 24px;
+    gap: 24px;
     display: flex;
     align-items: center;
 }
 
-.catalog-item-user {
-
-    &:nth-child(n+3) {
-        margin-left: 24px;
-    }
-}
+.catalog-item-user {}
 
 .catalog-link-user {
     display: flex;
@@ -217,14 +229,8 @@
     width: 92px;
 }
 
-.profile__menu-list {}
-
 .profile-item {
     padding: 8px;
-}
-
-.profile__menu-item {
-    width: 201px;
 }
 
 .profile-link {
@@ -255,8 +261,6 @@
     cursor: pointer;
 }
 
-.profile__menu__avatar-name {}
-
 .profile-arrow {
     position: absolute;
     right: 0;
@@ -265,8 +269,6 @@
     width: 24px;
     height: 24px;
 }
-
-.profile__menu-arrow {}
 
 .profile__submenu-list {
     position: absolute;
@@ -315,18 +317,27 @@
 .main-header-banner-wrap {
     display: flex;
     align-items: center;
+    justify-content: end;
+    padding-left: 305px;
+}
+
+.main-header-banner-img {
+    position: absolute;
+    bottom: 0;
 }
 
 .main-header-banner {
+    position: relative;
     padding: 0 128px 0 172px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    justify-content: end;
     margin-top: 4px;
     min-height: 200px;
     background-image: url('../../images/main-header-banner-decor.jpg');
     background-size: cover;
     background-repeat: no-repeat;
+
 }
 
 .main-header-banner-title {
@@ -336,4 +347,5 @@
     font-size: 48px;
     font-weight: 700;
     line-height: 72px;
+    z-index: 999;
 }
